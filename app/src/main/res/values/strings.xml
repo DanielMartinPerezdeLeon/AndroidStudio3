@@ -1,4 +1,5 @@
 <resources>
+    <!--    MAIN     -->
     <string name="app_name">My Application</string>
     <string name="boton_alta">ALTAS</string>
     <string name="boton_salir">SALIR</string>
@@ -7,5 +8,13 @@
     <string name="boton_radio">SEXO</string>
     <string name="boton_spinner">VERIFICAR</string>
     <string name="boton_seekbar">RANGO</string>
+
+    <!--    FORMULARIO     -->
+    <string name="texto_nombre">Nombre:</string>
+    <string name="texto_email">Email:</string>
+    <string name="texto_fechanacimiento">Fecha de nacimiento:</string>
+    <string name="boton_aceptar">ACEPTAR</string>
+    <string name="boton_cancelar">CANCELAR</string>
+
 
 </resources>

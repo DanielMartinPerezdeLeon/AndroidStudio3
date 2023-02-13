@@ -162,7 +162,7 @@
         app:layout_constraintGuide_percent="0.15" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/boton_radio"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/boton_radio"
