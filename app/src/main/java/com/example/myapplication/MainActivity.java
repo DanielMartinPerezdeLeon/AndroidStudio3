@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
             case 1:{    //FORMULARIO
                 nombre=data.getExtras().getString("nombre").toString();
                 email=data.getExtras().getString("email");
+                fecha_nac=data.getExtras().getString("edad");
 
                 break;
             }

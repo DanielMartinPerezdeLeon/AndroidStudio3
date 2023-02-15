@@ -11,6 +11,9 @@ import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Calendar;
+import java.util.Date;
+
 public class Formulario extends AppCompatActivity {
 
 
@@ -34,9 +37,14 @@ public class Formulario extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent form =new Intent();
-                form.putExtra("nombre",text_nombre.getText());
-                form.putExtra("email",text_email.getText());
-                form.putExtra("fecha",calendar.getDate());
+                form.putExtra("nombre",text_nombre.getText().toString());
+                form.putExtra("email",text_email.getText().toString());
+                long milis= calendar.getDate();
+                Date f = new Date(milis);
+                Date act = new Date();
+                int anos=act.getYear()-f.getYear();
+
+                form.putExtra("edad",Integer.toString(anos));
                 setResult(1,form);
                 finish();
             }
