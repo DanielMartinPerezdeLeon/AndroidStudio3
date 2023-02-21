@@ -7,6 +7,34 @@
     tools:context=".ActivitySexo">
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.70" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline49"
@@ -103,4 +131,67 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.35" />
+
+    <TextView
+        android:id="@+id/text_sexo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:freezesText="true"
+        android:gravity="bottom|right"
+        android:text="@string/text_sexo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline54"
+        app:layout_constraintEnd_toStartOf="@+id/guideline47"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline46"
+        app:layout_constraintTop_toTopOf="@+id/guideline50"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/grupo_radio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline48"
+        app:layout_constraintEnd_toStartOf="@+id/guideline61"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline60"
+        app:layout_constraintTop_toTopOf="@+id/guideline54"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/sexo1"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:text="@string/hombre" />
+
+        <RadioButton
+            android:id="@+id/sexo2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/mujer" />
+
+        <RadioButton
+            android:id="@+id/sexo3"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="@string/otro" />
+
+        <RadioButton
+            android:id="@+id/sexo4"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:text="@string/no_dice" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/boton_aceptar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline62"
+        app:layout_constraintEnd_toStartOf="@+id/guideline61"
+        app:layout_constraintStart_toStartOf="@+id/guideline60"
+        app:layout_constraintTop_toTopOf="@+id/guideline63" />
 </androidx.constraintlayout.widget.ConstraintLayout>

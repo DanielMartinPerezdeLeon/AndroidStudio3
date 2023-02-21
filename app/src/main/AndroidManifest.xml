@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ActivityVer"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRango"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPais"
+            android:exported="false" />
+        <activity
             android:name=".ActivitySexo"
             android:exported="false" />
         <activity

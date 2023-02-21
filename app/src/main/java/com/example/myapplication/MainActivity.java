@@ -16,11 +16,14 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
 
     //DATOS de alta
-    String nombre;
-    String email;
-    int fecha_nac;
-    boolean aceptar_datos;
-    boolean recibir_informacion;
+    String nombre="null";
+    String email="null";
+    int fecha_nac=0;
+    boolean aceptar_datos=false;
+    boolean recibir_informacion=false;
+    String sexo="null";
+    String pais="null";
+    int rango=-1;
 
 
 
@@ -78,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
         btn_radio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent inten=new Intent (MainActivity.this, ActivitySexo.class);
+                startActivityForResult(inten,1);
             }
         });
 
@@ -86,7 +90,8 @@ public class MainActivity extends AppCompatActivity {
         btn_spinner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent inten=new Intent (MainActivity.this, ActivityPais.class);
+                startActivityForResult(inten,1);
             }
         });
 
@@ -94,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
         btn_seekbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent inten=new Intent (MainActivity.this, ActivityRango.class);
+                startActivityForResult(inten,1);
             }
         });
 
@@ -106,9 +112,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Button btn_ver= (Button) findViewById(R.id.boton_ver);
         switch (resultCode){
-            case 0:{
-                break;
-            }
+
             case 1:{    //FORMULARIO
                 nombre=data.getExtras().getString("nombre").toString();
                 email=data.getExtras().getString("email");
@@ -119,6 +123,20 @@ public class MainActivity extends AppCompatActivity {
             case 2:{
                 aceptar_datos=data.getExtras().getBoolean("Datos");
                 recibir_informacion=data.getExtras().getBoolean("Informacion");
+
+                break;
+            }
+            case 3:{
+                sexo=data.getExtras().getString("Sexo");
+                break;
+            }
+            case 4:{
+                pais=data.getExtras().getString("Pais");
+                break;
+            }
+            case 5:{
+                rango=data.getExtras().getInt("Rango");
+                break;
             }
             default:{
                 break;

@@ -190,6 +190,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:ems="10"
+        android:hint="@string/texto_fechanacimiento"
         android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/guideline30"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"

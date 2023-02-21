@@ -6,7 +6,7 @@
     <string name="boton_ver">VER</string>
     <string name="boton_checkbox">DATOS</string>
     <string name="boton_radio">SEXO</string>
-    <string name="boton_spinner">VERIFICAR</string>
+    <string name="boton_spinner">PAIS</string>
     <string name="boton_seekbar">RANGO</string>
 
     <!--    FORMULARIO     -->
@@ -20,6 +20,20 @@
     <!-- DATOS -->
     <string name="checkboxacepto">He leido y acepto los términos</string>
     <string name="checkboxrecibirinformacion">Acepto recibir información a mi correo</string>
+
+    <!-- SEXO -->
+    <string name="text_sexo">Sexo:</string>
+    <string name="hombre">HOMBRE</string>
+    <string name="mujer">MUJER</string>
+    <string name="otro">OTRO</string>
+    <string name="no_dice">PREFIERO NO DECIRLO</string>
+
+
+    <!-- PAIS -->
+    <string name="text_pais">Pais:</string>
+
+    <!-- RANGO -->
+    <string name="text_rango">Rango:</string>
 
 
 </resources>
