@@ -17,4 +17,9 @@
     <string name="boton_cancelar">CANCELAR</string>
 
 
+    <!-- DATOS -->
+    <string name="checkboxacepto">He leido y acepto los términos</string>
+    <string name="checkboxrecibirinformacion">Acepto recibir información a mi correo</string>
+
+
 </resources>

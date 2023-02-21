@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ActivitySexo"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDatos"
+            android:exported="false" />
+        <activity
             android:name=".Formulario"
             android:exported="false" />
         <activity

@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
     //DATOS de alta
     String nombre;
     String email;
-    String fecha_nac;
+    int fecha_nac;
+    boolean aceptar_datos;
+    boolean recibir_informacion;
 
 
 
@@ -67,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
         btn_checkbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent inten=new Intent (MainActivity.this, ActivityDatos.class);
+                startActivityForResult(inten,1);
             }
         });
 
@@ -102,12 +105,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         Button btn_ver= (Button) findViewById(R.id.boton_ver);
-        switch (requestCode){
+        switch (resultCode){
+            case 0:{
+                break;
+            }
             case 1:{    //FORMULARIO
                 nombre=data.getExtras().getString("nombre").toString();
                 email=data.getExtras().getString("email");
-                fecha_nac=data.getExtras().getString("edad");
+                fecha_nac=data.getExtras().getInt("edad");
 
+                break;
+            }
+            case 2:{
+                aceptar_datos=data.getExtras().getBoolean("Datos");
+                recibir_informacion=data.getExtras().getBoolean("Informacion");
+            }
+            default:{
                 break;
             }
         }
