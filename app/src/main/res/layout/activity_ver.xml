@@ -6,8 +6,123 @@
     android:layout_height="match_parent"
     tools:context=".ActivityVer">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
     <TextView
-        android:id="@+id/texto_nombre7"
+        android:id="@+id/field_pais"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline91"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toTopOf="@+id/guideline96"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/field_terminos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline84"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toTopOf="@+id/guideline86" />
+
+    <TextView
+        android:id="@+id/field_informacion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline96"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toTopOf="@+id/guideline84" />
+
+    <TextView
+        android:id="@+id/field_rango"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline86"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toTopOf="@+id/guideline85" />
+
+    <TextView
+        android:id="@+id/field_edad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline93"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toBottomOf="@+id/field_email" />
+
+    <TextView
+        android:id="@+id/field_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline94"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toTopOf="@+id/guideline95" />
+
+    <TextView
+        android:id="@+id/texto_informacion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Terminos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/texto_pais"
+        app:layout_constraintEnd_toStartOf="@+id/guideline83"
+        app:layout_constraintStart_toStartOf="@+id/guideline88"
+        app:layout_constraintTop_toBottomOf="@+id/texto_terminos"
+        tools:text="Recibir Información:" />
+
+    <TextView
+        android:id="@+id/texto_terminos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
@@ -20,7 +135,20 @@
         tools:text="Terminos:" />
 
     <TextView
-        android:id="@+id/texto_nombre5"
+        android:id="@+id/texto_pais"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Terminos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline91"
+        app:layout_constraintEnd_toStartOf="@+id/guideline83"
+        app:layout_constraintStart_toStartOf="@+id/guideline88"
+        app:layout_constraintTop_toTopOf="@+id/guideline96"
+        tools:text="@string/text_pais" />
+
+    <TextView
+        android:id="@+id/texto_sexo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
@@ -29,11 +157,11 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline85"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toBottomOf="@+id/texto_nombre3"
+        app:layout_constraintTop_toBottomOf="@+id/texto_fecha"
         tools:text="@string/text_sexo" />
 
     <TextView
-        android:id="@+id/texto_nombre6"
+        android:id="@+id/texto_rango"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
@@ -46,7 +174,7 @@
         tools:text="@string/text_rango" />
 
     <TextView
-        android:id="@+id/texto_nombre3"
+        android:id="@+id/texto_fecha"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
@@ -56,7 +184,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
         app:layout_constraintTop_toTopOf="@+id/guideline94"
-        tools:text="@string/texto_fechanacimiento" />
+        tools:text="Edad:" />
 
     <TextView
         android:id="@+id/texto_email"
@@ -70,13 +198,6 @@
         app:layout_constraintStart_toStartOf="@+id/guideline88"
         app:layout_constraintTop_toTopOf="@+id/guideline95"
         tools:text="@string/texto_email" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline82"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.7" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline83"
@@ -98,6 +219,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/field_sexo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline85"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toTopOf="@+id/guideline93" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline86"
@@ -187,4 +320,27 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
         app:layout_constraintTop_toTopOf="@+id/guideline90" />
+
+    <TextView
+        android:id="@+id/field_nombre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline95"
+        app:layout_constraintEnd_toStartOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline83"
+        app:layout_constraintTop_toTopOf="@+id/guideline90" />
+
+    <Button
+        android:id="@+id/botonaceptar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/boton_aceptar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline103"
+        app:layout_constraintEnd_toStartOf="@+id/guideline102"
+        app:layout_constraintStart_toStartOf="@+id/guideline101"
+        app:layout_constraintTop_toTopOf="@+id/guideline104" />
 </androidx.constraintlayout.widget.ConstraintLayout>
