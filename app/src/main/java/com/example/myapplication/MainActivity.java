@@ -56,7 +56,17 @@ public class MainActivity extends AppCompatActivity {
         btn_ver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent ver =new Intent(MainActivity.this, ActivityVer.class);
+                ver.putExtra("nombre",nombre);
+                ver.putExtra("email",email);
+                ver.putExtra("edad",fecha_nac);
+                ver.putExtra("datos",aceptar_datos);
+                ver.putExtra("informacion",recibir_informacion);
+                ver.putExtra("sexo",sexo);
+                ver.putExtra("pais",pais);
+                ver.putExtra("rango",rango);
+                setResult(1);
+                startActivity(ver);
             }
         });
 

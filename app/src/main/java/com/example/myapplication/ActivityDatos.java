@@ -24,8 +24,8 @@ public class ActivityDatos extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent form =new Intent();
-                form.putExtra("Datos",cb1.isActivated());
-                form.putExtra("Información", cb2.isActivated());
+                form.putExtra("Datos",cb1.isChecked());
+                form.putExtra("Información", cb2.isChecked());
 
                 setResult(2,form);
                 finish();

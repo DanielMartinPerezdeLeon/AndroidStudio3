@@ -39,7 +39,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline91"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
@@ -53,7 +52,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline84"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
@@ -65,7 +63,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline96"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
@@ -77,7 +74,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline86"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
@@ -89,7 +85,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline93"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
@@ -101,7 +96,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline94"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
@@ -113,52 +107,48 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="Terminos"
+        android:text="Recibir Información:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/texto_pais"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toBottomOf="@+id/texto_terminos"
-        tools:text="Recibir Información:" />
+        app:layout_constraintTop_toBottomOf="@+id/texto_terminos" />
 
     <TextView
         android:id="@+id/texto_terminos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="Terminos"
+        android:text="Terminos:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline84"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toTopOf="@+id/guideline86"
-        tools:text="Terminos:" />
+        app:layout_constraintTop_toTopOf="@+id/guideline86" />
 
     <TextView
         android:id="@+id/texto_pais"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="Terminos"
+        android:text="@string/text_pais"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline91"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toTopOf="@+id/guideline96"
-        tools:text="@string/text_pais" />
+        app:layout_constraintTop_toTopOf="@+id/guideline96" />
 
     <TextView
         android:id="@+id/texto_sexo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="@string/texto_nombre"
+        android:text="@string/text_sexo"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline85"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toBottomOf="@+id/texto_fecha"
-        tools:text="@string/text_sexo" />
+        app:layout_constraintTop_toBottomOf="@+id/texto_fecha" />
 
     <TextView
         android:id="@+id/texto_rango"
@@ -170,34 +160,31 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline86"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toTopOf="@+id/guideline85"
-        tools:text="@string/text_rango" />
+        app:layout_constraintTop_toTopOf="@+id/guideline85" />
 
     <TextView
         android:id="@+id/texto_fecha"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="@string/texto_nombre"
+        android:text="Edad:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline93"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toTopOf="@+id/guideline94"
-        tools:text="Edad:" />
+        app:layout_constraintTop_toTopOf="@+id/guideline94" />
 
     <TextView
         android:id="@+id/texto_email"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="@string/texto_nombre"
+        android:text="@string/texto_email"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline94"
         app:layout_constraintEnd_toStartOf="@+id/guideline83"
         app:layout_constraintStart_toStartOf="@+id/guideline88"
-        app:layout_constraintTop_toTopOf="@+id/guideline95"
-        tools:text="@string/texto_email" />
+        app:layout_constraintTop_toTopOf="@+id/guideline95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline83"
@@ -225,7 +212,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline85"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
@@ -326,7 +312,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/guideline95"
         app:layout_constraintEnd_toStartOf="@+id/guideline87"
