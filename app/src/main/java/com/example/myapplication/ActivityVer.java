@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ActivityVer extends AppCompatActivity {
 
@@ -21,7 +23,6 @@ public class ActivityVer extends AppCompatActivity {
     String pais;
     int rango;
 
-    Button botonaceptar = (Button) findViewById(R.id.botonaceptar);
 
 
     @Override
@@ -40,37 +41,50 @@ public class ActivityVer extends AppCompatActivity {
         TextView field_pais = (TextView) findViewById(R.id.field_pais);
         TextView field_rango = (TextView) findViewById(R.id.field_rango);
 
-        nombre=intent.getExtras().getString("nombre");
-        email=intent.getExtras().getString("email");
-        edad=intent.getExtras().getInt("edad");
-        datos=intent.getExtras().getBoolean("datos");
-        informacion=intent.getExtras().getBoolean("informacion");
-        sexo=intent.getExtras().getString("sexo");
-        pais=intent.getExtras().getString("pais");
-        rango=intent.getExtras().getInt("rango");
+        Button botonaceptar = (Button) findViewById(R.id.botonaceptar);
 
-        field_nombre.setText(nombre);
-        field_email.setText(email);
-        field_edad.setText(Integer.toString(edad));
-        if(datos==true){
-            field_datos.setText("Si");
-        }else{
-            field_datos.setText("No");
+
+        try {
+
+
+            nombre = intent.getExtras().getString("nombre");
+            email = intent.getExtras().getString("email");
+            edad = intent.getExtras().getInt("edad");
+            datos = intent.getExtras().getBoolean("datos");
+            informacion = intent.getExtras().getBoolean("informacion");
+            sexo = intent.getExtras().getString("sexo");
+            pais = intent.getExtras().getString("pais");
+            rango = intent.getExtras().getInt("rango");
+
+            field_nombre.setText(nombre);
+            field_email.setText(email);
+            field_edad.setText(Integer.toString(edad));
+            if (datos == true) {
+                field_datos.setText("Si");
+            } else {
+                field_datos.setText("No");
+            }
+            if (informacion == true) {
+                field_informacion.setText("Si");
+            } else {
+                field_informacion.setText("No");
+            }
+            field_sexo.setText(sexo);
+            field_pais.setText(pais);
+            field_rango.setText(Integer.toString(edad));
+        }catch (Exception ex){
+            Log.e(ex.toString(),ex.toString());
         }
-        if(informacion==true){
-            field_informacion.setText("Si");
-        }else{
-            field_informacion.setText("No");
-        }
-        field_sexo.setText(sexo);
-        field_pais.setText(pais);
-        field_rango.setText(Integer.toString(edad));
 
 
         botonaceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent ver =new Intent(ActivityVer.this, MainActivity.class);
+
+                Toast toast1 = Toast.makeText(getApplicationContext(), "Datos enviados", Toast.LENGTH_SHORT);    //crea toast
+                toast1.show();  //lo muestra
+
                 startActivity(ver);
             }
         });

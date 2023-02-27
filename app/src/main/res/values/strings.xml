@@ -11,7 +11,7 @@
 
     <!--    FORMULARIO     -->
     <string name="texto_nombre">Nombre:</string>
-    <string name="texto_email">Email:</string>
+    <string name="texto_email" translatable="false">Email:</string>
     <string name="texto_fechanacimiento">Fecha de nacimiento:</string>
     <string name="boton_aceptar">ACEPTAR</string>
     <string name="boton_cancelar">CANCELAR</string>

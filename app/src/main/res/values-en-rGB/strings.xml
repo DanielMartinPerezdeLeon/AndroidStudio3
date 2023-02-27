@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="boton_alta">CONSULTATION</string>
+    <string name="boton_salir">EXIT</string>
+    <string name="boton_ver">SEE</string>
+    <string name="boton_checkbox">DATA</string>
+    <string name="boton_radio">SEX</string>
+    <string name="boton_spinner">COUNTRY</string>
+    <string name="boton_seekbar">RANGE</string>
+    <string name="texto_nombre">Name:</string>
+    <string name="texto_fechanacimiento">Birth date:</string>
+    <string name="boton_aceptar">ACCEPT</string>
+    <string name="boton_cancelar">CANCEL</string>
+    <string name="checkboxacepto">I have read and accepted the terms</string>
+    <string name="checkboxrecibirinformacion">I accept to receive info in my email</string>
+    <string name="text_sexo">Sex:</string>
+    <string name="hombre">MAN</string>
+    <string name="mujer">WOMAN</string>
+    <string name="otro">OTHER</string>
+    <string name="no_dice">I WOULD RATHER NOT TELLING</string>
+    <string name="text_pais">Country:</string>
+    <string name="text_rango">Range:</string>
+
+</resources>
